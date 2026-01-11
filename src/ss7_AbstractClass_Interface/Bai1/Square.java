@@ -1,5 +1,7 @@
 package ss7_AbstractClass_Interface.Bai1;
 
+import java.util.LinkedHashSet;
+
 public class Square implements Resizeable {
     double cd;
     public Square(int cd) {
