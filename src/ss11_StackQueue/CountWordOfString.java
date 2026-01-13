@@ -1,4 +1,4 @@
-package ss12_StackQueue;
+package ss11_StackQueue;
 
 import java.util.Scanner;
 import java.util.TreeMap;
