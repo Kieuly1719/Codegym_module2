@@ -1,8 +1,12 @@
-package CaseStudy.Controller;
+package CaseStudy.controller;
 
 import java.util.Scanner;
 
 public class FuramaController {
+    EmployeeController employeeController;
+    public FuramaController(EmployeeController employeeController) {
+        this.employeeController = employeeController;
+    }
     public void displayMainMenu(){
         System.out.println("1. Employee Management");
         System.out.println("2. Customer Management");
@@ -46,14 +50,19 @@ public class FuramaController {
         int choice = sc.nextLine().charAt(0);
         switch(choice){
             case 1:
+                employeeController.displayListEmployee();
                 break;
             case 2:
+                employeeController.add();
                 break;
             case 3:
+                employeeController.deleteEmployee();
                 break;
             case 4:
+                employeeController.editEmployee();
                 break;
             case 5:
+                choice = 0;
                 break;
         }
     }
