@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerService implements ICustomerService {
-    private CustomerRepository  customerRepository = new CustomerRepository();
+    private final CustomerRepository  customerRepository = new CustomerRepository();
 
     @Override
     public void addCustomer(Customer customer) {
