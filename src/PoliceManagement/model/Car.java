@@ -25,6 +25,14 @@ public class Car extends Vehicle {
     public void setType(int type) {
         this.type = type;
     }
+    public String getStrType(){
+        if (type==0){
+            return "Du lịch";
+        }
+        else{
+            return "Xe khách";
+        }
+    }
     @Override
     public String toString() {
         return super.toString() + "," +
@@ -35,6 +43,6 @@ public class Car extends Vehicle {
     public String displayVehicle() {
         return super.displayVehicle() +
                 "\n5. Số ghế ngồi: " + number_of_seats +
-                "\n6. Loại xe: " + type;
+                "\n6. Loại xe: " + getStrType();
     }
 }
